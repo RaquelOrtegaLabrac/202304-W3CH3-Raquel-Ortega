@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+main {
+  min-height: 70vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
