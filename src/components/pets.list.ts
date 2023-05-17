@@ -9,7 +9,6 @@ export class PetsList extends Component {
   constructor(selector: string) {
     super(selector);
     this.pets = getMockPets();
-    this.pets[0].isAdopted = true;
     this.render();
     console.log(this.element);
     console.log(this.pets);
@@ -39,6 +38,9 @@ export class PetsList extends Component {
       .map(
         (item) => `
         <li>
+         <div class="card">
+    <img src="/public/${item.breed}" alt="">
+  </div>
           <span>${item.id}</span>
           <span>${item.name}</span>
           <span>${item.breed}</span>
